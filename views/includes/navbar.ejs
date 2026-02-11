@@ -1,0 +1,44 @@
+
+<nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse border-bottom" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <div class="home-explore">
+                <a class="nav-link active" aria-current="page" href="/listings"><i class="fa-regular fa-compass"></i></a>
+                <a class="nav-link" href="/listings"><p>Explore</p></a>
+            </div>
+
+            <div class="search">
+                <form class="d-flex" id="searching" role="search" action="/listings/search/">
+                    <select class="form-select search-inp" id="country" name="listing[country]" required>
+                        <option selected>Search Destinations</option>
+                        <option value="India">India</option>
+                        <option value="Canada">Canada</option>
+                        <option value="United States">United States</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Nepal">Nepal</option>
+                    </select> 
+                    &nbsp; 
+                    <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                </form>
+            </div>
+
+            <div class="signup-login-logout">
+                <a class="nav-link" href="/listings/new"><p>Become a host</p></a> &nbsp; &nbsp; 
+                <% if(currUser) { %>
+                    <a class="nav-link" href="/logout"><p><b>Logout</b></p></a>
+                <% } %>
+                <% if(!currUser) { %>
+                    <a class="nav-link" href="/signup"><p><b>Sign up</b></p></a>
+                    <a class="nav-link" href="/login"><p><b>Login</b></p></a>
+                <% } %>
+            </div>
+        </div>
+        </div>
+    </div>
+</nav>
