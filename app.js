@@ -118,8 +118,8 @@ app.use((err, req, res, next) => {
     res.status(status).render("./listings/error.ejs", { message });
 });
 
-
-//listening port
-app.listen(3000, () => {
-    console.log(`Server is listening to port 3000`);
+const port = 3000;
+//listening to port
+app.listen(port, () => {
+    console.log(`Server is listening to port ${port}`);
 });
