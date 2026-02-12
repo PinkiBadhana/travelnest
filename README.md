@@ -63,7 +63,7 @@ The application is deployed on Render and uses MongoDB Atlas for cloud database 
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/PinkiBadhana/travelnest.git
    
 2. Install dependencies:
    npm install
