@@ -16,6 +16,7 @@ The application is deployed on Render and uses MongoDB Atlas for cloud database 
 
 - 🔐 User Authentication (Signup/Login/Logout)
 - 🏠 Add, Edit, and Delete Travel Listings
+- Upload and Manage Listing Images (Cloudinary Integration)
 - 📍 Explore Listings by Destination
 - 💬 Post and Delete Reviews
 - 🔎 Search Functionality
@@ -37,6 +38,8 @@ The application is deployed on Render and uses MongoDB Atlas for cloud database 
 - Express Session
 - Connect-Mongo
 - Method-Override
+- Cloudinary (Image Storage)
+- Multer (File Upload Handling)
 
 ### Frontend
 - EJS (Embedded JavaScript Templates)
@@ -66,7 +69,7 @@ The application is deployed on Render and uses MongoDB Atlas for cloud database 
    npm install
    
 4. Create a .env file and add:
-   ATLASDB_URL=your_mongodb_connection_string
+   ATLASDB_URL=your_mongodb_connection_string, 
    SECRET=your_secret_key
    
 6. Run the application:
